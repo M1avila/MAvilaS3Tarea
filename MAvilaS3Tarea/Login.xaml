@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAvilaS3Tarea.Login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Black">
+                
+                <Label Text="VENTANA DE INICIO" FontSize="20" TextColor="GreenYellow" HorizontalTextAlignment="Center"/>
+                
+                <Image Source="login.jpg" MinimumWidthRequest="100" HeightRequest="100"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Text="USUARIO" FontSize="17" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                    <Entry x:Name="txtUser"  Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1" BackgroundColor="White"/>
+
+                    <Label Text="CONTRASEÑA" FontSize="17" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" TextColor="White"/>
+                    <Entry x:Name="txtPass"  Placeholder="Contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True" BackgroundColor="White"/>
+
+
+
+                    <Button x:Name="btnEnviar"  Text="INICIAR" Clicked="btnEnviar_Clicked"  Grid.Row="2" Grid.Column="1"/>
+                    <Button x:Name="btnRgistrar"  Text="REGISTRO" Clicked="btnRgistrar_Clicked"  Grid.Row="2" Grid.Column="0"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

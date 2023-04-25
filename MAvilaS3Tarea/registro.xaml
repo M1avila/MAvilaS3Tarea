@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAvilaS3Tarea.registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Black">
+
+                <Label Text="VENTANA DE REGISTRO" FontSize="20" TextColor="GreenYellow" HorizontalTextAlignment="Center"/>
+
+                <Image Source="login.jpg" MinimumWidthRequest="100" HeightRequest="100"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Text="NOMBRE" FontSize="17" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                    <Entry   Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1" BackgroundColor="White"/>
+
+                    <Label Text="APELLIDO" FontSize="17" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" TextColor="White"/>
+                    <Entry   Placeholder="APELLIDO" Grid.Row="1" Grid.Column="1"  BackgroundColor="White"/>
+                    
+                    <Label Text="CORREO" FontSize="17" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0" TextColor="White"/>
+                    <Entry   Placeholder="INGRESA TU CORREO" Grid.Row="1" Grid.Column="2"  BackgroundColor="White"/>
+
+
+
+                    <Button  Text="INICIAR" BackgroundColor="Red"  Grid.Row="3" Grid.Column="1"/>
+                    <Button  Text="REGISTRO" BackgroundColor="Azure"   Grid.Row="3" Grid.Column="0"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
